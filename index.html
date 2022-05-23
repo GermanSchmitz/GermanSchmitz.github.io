@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Sherman Burgers</title>
+    <link
+      rel="shortcut icon"
+      href="images/logo_con_bgcolor.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6632ea0a34.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <a href="#" class="nav_logo">
+          <img src="images/logo_sherman_burgers_white.png" width="100" alt="Logo sherman burgers en blanco y negro" />
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/menu.html" class="nav__link">MENU</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/armaTuHamburguesa.html" class="nav__link"
+              >ARMA TU HAMBURGUESA</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">CONTACTO</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <img
+          src="images/Banner_sherman_burgers.svg"
+          alt="Calidad que podes saborear, acompañado de unas hamburguesas. Probalas, desde caballito al mundo."
+          class="banner__home"
+          id="bannerHome"
+        />
+      </section>
+      <section class="history">
+        <div class="history__container">
+          <h1>Nosotros</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ea
+            earum ex vero veritatis libero eveniet neque voluptates, quae fuga
+            at nobis iure nam asperiores accusamus laudantium voluptatibus
+            veniam? Molestias. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos sint nam cupiditate esse aperiam nihil
+            reiciendis, illo corporis officiis non numquam eius quas explicabo
+            ab quod.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            perferendis incidunt amet rerum. Cupiditate, provident pariatur
+            inventore quasi eaque illo hic distinctio facilis, ab magni rem aut.
+            Consectetur, sed ducimus. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Adipisci facere similique, accusantium possimus
+            modi aliquid enim pariatur quam eligendi aperiam, sunt impedit
+            cumque cupiditate fuga, est minima laborum neque veniam!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="contact__info">
+        <div class="social__media">
+          <a href="https://www.instagram.com/sherman.burgers/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="mail__contact">
+          <a href="mailto:shermanburgers@gmail.com">shermanburgers@gmail.com</a>
+        </div>
+        <div class="numero_telefonico">11 3633-3811</div>
+        <div class="contact__logo">
+          <a href="#header"><img src="../images/logo_sherman_burgers_white.png" width="100" alt="" /></a>
+          <h6>©Sherman Burgers 2022</h6>
+        </div>
+      </div>
+      <div class="form__container">
+        <form action="">
+          <label for="name">Nombre *</label>
+          <input
+            type="text"
+            name="name"
+            id="formName"
+            placeholder="nombre..."
+            class="form__item"
+            required
+          />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            placeholder="usuario@dominio.com"
+            class="form__item"
+            required
+          />
+          <label for="textArea">Mensaje *</label>
+          <textarea
+            name="textArea"
+            id="textArea"
+            cols="20"
+            rows="5"
+            placeholder="mensaje..."
+            class="form__item"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar" class="form__item" />
+        </form>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

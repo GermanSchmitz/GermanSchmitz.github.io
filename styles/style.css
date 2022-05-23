@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #eee;
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav__link {
+  transition: 0.1s ease;
+}
+
+.nav__link:hover {
+  color: #ffbb55;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: #ffffff;
+}
+
+.banner__home {
+  width: 100vw;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+}
+
+.history__container {
+  margin: 100px;
+  width: 50%;
+  text-align: center;
+}
+
+.history__container h1 {
+  margin: 10px;
+  font-weight: 400;
+}
+
+footer {
+  border-top: 100px solid #ffbb55;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 25px 0;
+}
+
+.contact__info {
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social__media {
+  margin: 10px;
+}
+
+.social__media a {
+  left: 0;
+}
+
+.fa-instagram {
+  font-size: 43px;
+}
+
+.mail__contact {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.contact__logo {
+  margin: 10px;
+  text-align: center;
+}
+
+.contact__logo img {
+  width: 130px;
+}
+
+.contact__logo h6 {
+  font-size: 13px;
+}
+
+.numero_telefonico {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.form__container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+.form__item {
+  display: inline;
+  color: #000000;
+  width: 100%;
+  margin: 5px 20px 10px 0;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .banner__home {
+    float: left;
+    width: 768px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav__menu {
+    position: fixed;
+    left: -100%;
+    top: 106px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  .nav__item {
+    margin: 16px 0;
+  }
+
+  .nav__menu.active {
+    left: 0;
+  }
+
+  .contact__info {
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
