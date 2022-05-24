@@ -12,3 +12,5 @@ document.querySelectorAll(".nav__link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+
