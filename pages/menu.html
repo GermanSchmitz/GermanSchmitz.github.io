@@ -163,7 +163,7 @@
         </div>
       </div>
       <div class="form__container">
-        <form action="">
+        <form action="https://formsubmit.co/shermanburgers@gmail.com" method="POST" name="formulario">
           <label for="name">Nombre *</label>
           <input
             type="text"
@@ -192,7 +192,7 @@
             class="form__item"
             required
           ></textarea>
-          <input type="submit" value="Enviar" class="form__item" onclick="validateEmail(document.formulario.email)"/>
+          <input type="submit" value="Enviar" class="form__item" onclick="validateEmail(document.formulario.email), allLetter(document.formulario.name)"/>
         </form>
       </div>
     </footer>
