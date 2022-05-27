@@ -26,7 +26,11 @@
     <header id="header">
       <nav class="navbar">
         <a href="#" class="nav_logo">
-          <img src="images/logo_sherman_burgers_white.png" width="100" alt="Logo sherman burgers en blanco y negro" />
+          <img
+            src="images/logo_sherman_burgers_white.png"
+            width="100"
+            alt="Logo sherman burgers en blanco y negro"
+          />
         </a>
         <ul class="nav__menu">
           <li class="nav__item">
@@ -96,12 +100,17 @@
         </div>
         <div class="numero_telefonico">11 3633-3811</div>
         <div class="contact__logo">
-          <a href="#header"><img src="../images/logo_sherman_burgers_white.png" width="100" alt="" /></a>
+          <a href="#header"
+            ><img
+              src="../images/logo_sherman_burgers_white.png"
+              width="100"
+              alt=""
+          /></a>
           <h6>©Sherman Burgers 2022</h6>
         </div>
       </div>
       <div class="form__container">
-        <form action="">
+        <form action="" name="formulario">
           <label for="name">Nombre *</label>
           <input
             type="text"
@@ -109,6 +118,7 @@
             id="formName"
             placeholder="nombre..."
             class="form__item"
+            onsubmit="return allLetter()"
             required
           />
           <label for="email">Email *</label>
@@ -130,7 +140,12 @@
             class="form__item"
             required
           ></textarea>
-          <input type="submit" value="Enviar" class="form__item" />
+          <input
+            type="submit"
+            value="Enviar"
+            class="form__item"
+            onclick="validateEmail(document.formulario.email), allLetter(document.formulario.name)"
+          />
         </form>
       </div>
     </footer>

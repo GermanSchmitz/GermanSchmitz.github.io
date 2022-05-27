@@ -13,4 +13,24 @@ document.querySelectorAll(".nav__link").forEach((n) =>
   })
 );
 
+function validateEmail(inputText) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.value.match(mailformat)) {
+    document.formulario.email.focus();
+    return true;
+  } else {
+    alert("Ingrese una direccion de correo valida");
+    document.formulario.email.focus();
+    return false;
+  }
+}
 
+function allLetter(inputtxt) {
+  var letters = /^[A-Za-z]+$/;
+  if (inputtxt.value.match(letters)) {
+    return true;
+  } else {
+    alert("Ingrese bien su nombre, no debe contener numeros");
+    return false;
+  }
+}

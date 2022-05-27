@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/armaTuHamburguesa.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,6 +61,91 @@
         </div>
       </nav>
     </header>
+    <main>
+      <h1>ARMA TU HAMBURGUESA</h1>
+      <div class="form_container">
+        <form action="" class="form__hamburguesa" name="formHamburguesa">
+          <div class="form__carne-pan-queso">
+            <div class="form__cpq-select-item">
+              <label>Elegi el pan:</label>
+              <select
+                name="pan"
+                id="pan"
+                form="formHamburguesa"
+                class="form__select"
+              >
+                <option value="panDePapa" class="form__select">
+                  Pan de papa
+                </option>
+                <option value="panDeQueso" class="form__select">
+                  Pan de queso
+                </option>
+                <option value="panDeMolde" class="form__select">
+                  Pan de molde
+                </option>
+              </select>
+            </div>
+            <div class="form__cpq-select-item">
+              <label for="cantidadCarnes">Cantidad de medallones</label>
+              <input
+                type="number"
+                min="1"
+                max="6"
+                placeholder="1"
+                value="1"
+                name="cantidadCarnes"
+                id="cantidadCarnes"
+                class="form__select form__select-cant-burgers"
+              />
+            </div>
+            <div class="form__cpq-select-item">
+              <label for="tipoQueso">Elegi el queso: </label>
+              <select
+                name="tipoQueso"
+                id="tipoQueso"
+                form="formHamburguesa"
+                class="form__select"
+              >
+                <option value="cheddar" class="form__select">Cheddar</option>
+                <option value="dambo" class="form__select">Dambo</option>
+                <option value="bluecheese" class="form__select">
+                  Bluecheese
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form__adicionales">
+            <div class="form__adicionales-checkbox-item">
+              <label for="bacon">Bacon</label>
+              <input type="checkbox" name="bacon" id="bacon" />
+            </div>
+            <div class="form__adicionales-checkbox-item">
+              <label for="lechuga">Lechuga</label>
+              <input type="checkbox" name="lechuga" id="lechuga" />
+            </div>
+            <div class="form__adicionales-checkbox-item">
+              <label for="tomate">Tomate</label>
+              <input type="checkbox" name="tomate" id="tomate" />
+            </div>
+            <div class="form__adicionales-checkbox-item">
+              <label for="cebolla">Cebolla caramelizada</label>
+              <input type="checkbox" name="cebolla" id="cebolla" />
+            </div>
+            <div class="form__adicionales-checkbox-item">
+              <label for="cebollaCrispy">Cebolla crispy</label>
+              <input type="checkbox" name="cebollaCrispy" id="cebollaCrispy" />
+            </div>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            id="formSubmit"
+            value="Terminar"
+            class="form__submit"
+          />
+        </form>
+      </div>
+    </main>
     <footer id="footer">
       <div class="contact__info">
         <div class="social__media">
@@ -72,7 +158,12 @@
         </div>
         <div class="numero_telefonico">11 3633-3811</div>
         <div class="contact__logo">
-          <a href="#header"><img src="../images/logo_sherman_burgers_white.png" width="100" alt="" /></a>
+          <a href="#header"
+            ><img
+              src="../images/logo_sherman_burgers_white.png"
+              width="100"
+              alt=""
+          /></a>
           <h6>©Sherman Burgers 2022</h6>
         </div>
       </div>
@@ -106,7 +197,12 @@
             class="form__item"
             required
           ></textarea>
-          <input type="submit" value="Enviar" class="form__item" />
+          <input
+            type="submit"
+            value="Enviar"
+            class="form__item"
+            onclick="validateEmail(document.formulario.email)"
+          />
         </form>
       </div>
     </footer>
